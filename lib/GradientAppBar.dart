@@ -15,21 +15,24 @@ class GradientAppBar extends StatelessWidget {
       alignment: Alignment.center,
       padding: EdgeInsets.only(top: statusBarHeight),
       height: statusBarHeight + barHeight,
-      decoration: new BoxDecoration(
-        gradient: new LinearGradient(
-            colors: [HexColor('150F6D'), HexColor('393D97')],
+      decoration: BoxDecoration(
+        gradient: LinearGradient(colors: [
+          HexColor('150F6D'),
+          HexColor('393D97')],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             stops: [0.0, 1.0],
-            tileMode: TileMode.clamp),
+            tileMode: TileMode.clamp)
       ),
-      child: new Center(
-        child: new Text(title,
+
+      child: Center (
+        child: Text(title,
             style: const TextStyle(
                 color: Colors.white,
                 fontFamily: 'Spectral',
                 fontWeight: FontWeight.w300,
-                fontSize: 48.0)),
+                fontSize: 48.0)
+        ),
       ),
     );
   }
