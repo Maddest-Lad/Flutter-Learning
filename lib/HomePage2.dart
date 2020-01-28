@@ -20,8 +20,17 @@ class HomePage2 extends StatelessWidget {
 
                     //Username Box
                     Container(alignment: Alignment.centerLeft, padding: EdgeInsets.only(left: 20), constraints: BoxConstraints.expand(width: 300, height: 50), decoration: BoxDecoration(color: Colors.lightBlue, borderRadius: BorderRadius.circular(45.0), border: Border.all(color: Colors.blueAccent[700], width: 5, style: BorderStyle.solid),),
-                      child: spectralFont("Username:"),
-                    )
+                      child: spectralFont("Username:")),
+                ]),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Icon(Icons.lock_outline, color: Colors.indigo, size: 55.0),
+
+                    //Password Bx
+                    Container(alignment: Alignment.centerLeft, padding: EdgeInsets.only(left: 20), constraints: BoxConstraints.expand(width: 300, height: 50), decoration: BoxDecoration(color: Colors.lightBlue, borderRadius: BorderRadius.circular(45.0), border: Border.all(color: Colors.blueAccent[700], width: 5, style: BorderStyle.solid),),
+                      child: spectralFont("Password:")),
                   ],
                 )
               ],
