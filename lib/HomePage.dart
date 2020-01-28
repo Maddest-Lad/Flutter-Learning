@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
                 children: <Widget>[
 
                   // Appbar At The Top
-                  GradientAppBar("Team App"),
+                  GradientAppBar("Team App", HexColor('150F6D'), HexColor('393D97'), false),
 
                   // Separator Bar
                   Container(
@@ -51,33 +51,34 @@ class HomePage extends StatelessWidget {
                         width: MediaQuery.of(context).size.width/2,
                         height: 80),
                     decoration: BoxDecoration(
-                      color: HexColor('F26622'),
+                      color: HexColor('E18D2E'),
                       border: Border.all(
-                          color: HexColor('150F6D'),
+                          color: HexColor('2a2e6f'),
                           width: 5,
                           style: BorderStyle.solid
                       ),
-                      borderRadius: BorderRadius.circular(20.0),
+                      borderRadius: BorderRadius.circular(10.0),
                     ),
 
+                    // Login Button Text
                     child: Center (
                       child: Text("Login",
                           style: const TextStyle(
                             color: Colors.white,
                             fontFamily: 'Spectral',
-                            fontWeight: FontWeight.w300,
+                            fontWeight: FontWeight.bold,
                             fontSize: 36.0
                           )
                       ),
                     ),
                   ),
 
-
+                  // Forgot Password Button
                   Text("Forgot Your Password",
                     style: const TextStyle(
                         color: Colors.white,
                         fontFamily: 'Spectral',
-                        fontWeight: FontWeight.w300,
+                        fontWeight: FontWeight.bold,
                         fontSize: 16.0
                     )
                   ),
