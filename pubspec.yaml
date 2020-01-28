@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  auth: ^4.1.0
 
 dev_dependencies:
   flutter_test:
@@ -21,6 +22,7 @@ flutter:
   assets:
     - assets/852_Logo.png
     - assets/852_Logo_Blue.png
+    - assets/852_Logo_Orange.png
 
 fonts:
   - family: Spectral
