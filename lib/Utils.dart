@@ -33,7 +33,7 @@ Container spacingBar(Color c) {
 Container displayImage(String name) {
   return Container(
     padding: EdgeInsets.only(top: 20, bottom: 20),
-    constraints: BoxConstraints.expand(height: 300),
+    constraints: BoxConstraints.expand(height: 400),
     alignment: Alignment.center,
     child: Image.asset(name, fit: BoxFit.cover),
   );
