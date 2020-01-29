@@ -4,6 +4,6 @@ import 'HomePage2.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: HomePage2(),
+    home: HomePage(),
   ));
 }
